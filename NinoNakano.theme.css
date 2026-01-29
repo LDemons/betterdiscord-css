@@ -37,26 +37,26 @@
   --home-icon-image: url(https://media1.tenor.com/m/WkXdTGS9KT0AAAAd/nino-nakano-anime.gif);
 
   /*
-    Posición de la imagen del ícono de inicio
+    Change your friends icon image position
   */
   --home-icon-image-position: center center;
 
   /*
-    Zoom de la imagen del ícono de inicio
+    Change your friends icon image zoom
   */
   --home-icon-image-zoom: 120%;
 
   /*
-    Ancho de la Lista de Servidores
-    Una Columna:    62px
-    Doble Columna:  126px
-    Triple Columna: 184px
-    Cuatro Columnas: 242px
+    Server Listing Width
+    Single Column:  62px
+    Double Column:  126px
+    Triple Column:  184px
+    Quad Column:    242px
   */
-  --server-listing-width: 62px;
+  --server-listing-width: 126px;
 
   /*
-    Tamaño de Fuente
+    Font Size
   */
   --font-size: 100%;
 
@@ -270,4 +270,30 @@
 /* Panel de usuario en canal de voz */
 .panelIconWrapper-2m7h9i .avatarSpeaking-3pbvDX {
   box-shadow: inset 0 0 0 2px #ff55a2 !important;
+}
+
+/* Iconos de servidores más grandes */
+.wrapper-3kah-n.selected-1Drb7Z .childWrapper-1j_1ub,
+.wrapper-3kah-n .childWrapper-1j_1ub,
+.circleIconButton-1VxDrg {
+  width: 56px !important;
+  height: 56px !important;
+}
+
+.wrapper-3kah-n {
+  width: 56px !important;
+  height: 56px !important;
+}
+
+.svg-2azL_l {
+  width: 32px !important;
+  height: 32px !important;
+}
+
+/* Ícono de Mensajes Directos circular */
+.tutorialContainer-2v_y9i .childWrapper-1j_1ub,
+.tutorialContainer-2v_y9i,
+[aria-label="Mensajes directos"] .childWrapper-1j_1ub,
+[aria-label="Direct Messages"] .childWrapper-1j_1ub {
+  border-radius: 50% !important;
 }
