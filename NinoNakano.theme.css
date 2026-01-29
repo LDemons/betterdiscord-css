@@ -268,32 +268,15 @@
 }
 
 /* Panel de usuario en canal de voz */
-.panelIconWrapper-2m7h9i .avatarSpeaking-3pbvDX {
+.panelIconWrapper-2m7h9i .avatarSpeaking-3pbvDX {   
   box-shadow: inset 0 0 0 2px #ff55a2 !important;
 }
 
-/* Iconos de servidores más grandes */
-.wrapper-3kah-n.selected-1Drb7Z .childWrapper-1j_1ub,
-.wrapper-3kah-n .childWrapper-1j_1ub,
-.circleIconButton-1VxDrg {
-  width: 56px !important;
-  height: 56px !important;
-}
+/* INTENTOS DE HACER UNA LINEA SEPARADORA DESPUÉS DEL PRIMER SERVIDOR (MENSAJES DIRECTOS) */
 
-.wrapper-3kah-n {
-  width: 56px !important;
-  height: 56px !important;
-}
-
-.svg-2azL_l {
-  width: 32px !important;
-  height: 32px !important;
-}
-
-/* Ícono de Mensajes Directos circular */
-.tutorialContainer-2v_y9i .childWrapper-1j_1ub,
-.tutorialContainer-2v_y9i,
-[aria-label="Mensajes directos"] .childWrapper-1j_1ub,
-[aria-label="Direct Messages"] .childWrapper-1j_1ub {
-  border-radius: 50% !important;
+/* Línea separadora SOLO después del primer servidor (Mensajes Directos) */
+[data-list-id="guildsnav"] > [class*="listItem"]:first-child {
+  margin-bottom: 8px !important;
+  padding-bottom: 8px !important;
+  border-bottom: 2px solid rgba(255, 105, 180, 0.5) !important;
 }
