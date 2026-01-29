@@ -1,0 +1,264 @@
+/**
+* @name Nino Nakano Theme
+* @author LDemons
+* @version 1.0
+* @description Tema personalizado de Nino Nakano para BetterDiscord
+* @description Un tema elegante inspirado en Nino Nakano de Gotoubun no Hanayome
+*/
+
+@import url(https://puckzxz.github.io/NotAnotherAnimeTheme/build/v3/naat.v3.css);
+
+/*
+  TEMA DE NINO NAKANO
+  Paleta de colores: Rosa magenta, tonos elegantes y sofisticados
+  
+  Para editar este tema recomiendo usar Notepad++ o VS Code
+  Las imágenes DEBEN terminar con .jpg, .png u otra extensión de imagen
+*/
+
+:root {
+  /*
+    Fondo del Tema
+  */
+  --theme-background-image: url(https://w.wallhaven.cc/full/m3/wallhaven-m32lmk.png);
+
+  /*
+    Color Principal del Tema - Rosa Magenta de Nino
+  */
+  --main-theme-color: rgb(255, 105, 180);
+
+  /*
+    Transparencia Principal del Tema
+  */
+  --theme-transparency: rgba(20, 15, 25, 0.85);
+
+  /*
+    Imagen del Ícono de Inicio
+    Puedes usar un ícono o imagen pequeña de Nino
+  */
+  --home-icon-image: url(https://media1.tenor.com/m/WkXdTGS9KT0AAAAd/nino-nakano-anime.gif);
+
+  /*
+    Posición de la imagen del ícono de inicio
+  */
+  --home-icon-image-position: center center;
+
+  /*
+    Zoom de la imagen del ícono de inicio
+  */
+  --home-icon-image-zoom: 120%;
+
+  /*
+    Ancho de la Lista de Servidores
+    Una Columna:    62px
+    Doble Columna:  126px
+    Triple Columna: 184px
+    Cuatro Columnas: 242px
+  */
+  --server-listing-width: 62px;
+
+  /*
+    Tamaño de Fuente
+  */
+  --font-size: 100%;
+
+  /*
+    Colores de Menciones
+  */
+  --mention-color: rgba(255, 105, 180, 0.1);
+  --mention-sider: rgba(255, 105, 180, 1);
+  --mention-hover-color: rgba(255, 105, 180, 0.2);
+
+  /*
+    Color hover de categorías del servidor
+  */
+  --category-hover-color: rgb(255, 130, 200);
+
+  /*
+    Animación de servidor no leído
+    Usa "none" para remover las animaciones y usar solo el color principal
+  */
+  --unread-server-animation: rainbow;
+
+  /*
+    Botones de Video / Compartir Pantalla
+  */
+  --video-screen-button-background-color: rgba(255, 105, 180, 0.3);
+  --video-screen-button-foreground-color: white;
+  --video-screen-button-background-hovor-color: rgba(255, 105, 180, 0.5);
+  --video-screen-button-foreground-hovor-color: white;
+
+  /*
+    Color del Título de Rol
+  */
+  --member-listing-role-color: var(--main-theme-color);
+
+  /*
+    Popout Pequeño de Usuario
+  */
+  --small-user-popout-background-image: var(--theme-background-image);
+  --small-user-popout-background-transparency: rgba(20, 15, 25, 0.75);
+  --small-user-popout-background-image-position: center;
+
+  /*
+    Popout Grande de Usuario
+  */
+  --big-user-popout-background-image: var(--theme-background-image);
+  --big-user-popout-background-transparency: rgba(20, 15, 25, 0.75);
+  --big-user-popout-background-image-position: center;
+
+  /*
+    Bloques de Código
+  */
+  --code-markup-background-color: rgba(30, 20, 35, 0.7);
+  --code-markup-border: 1px solid rgba(255, 105, 180, 0.3);
+
+  /*
+    Transparencia de la Caja de Mensajes
+  */
+  --message-box-transparency: rgba(20, 15, 25, 0.7);
+
+  /*
+    Transparencia del Fondo de Embeds
+  */
+  --embed-background-transparency: rgba(20, 15, 25, 0.7);
+
+  /*
+    Botones Hover en Mensajes
+  */
+  --message-hover-buttons-background: rgba(255, 105, 180, 0.2);
+
+  /*
+    Transparencia del Menú Contextual
+  */
+  --context-menu-transparency: rgba(20, 15, 25, 0.9);
+
+  /*
+    Ícono de Agregar Servidor / Descubrir
+  */
+  --add-discover-icon-transparency: rgba(255, 105, 180, 0.15);
+  --add-discover-icon-color: #ff69b4;
+
+  /*
+    Color del Número de Límite de Canal
+  */
+  --channel-limit-count-color: var(--channels-default);
+  --channel-limit-background-left: rgba(255, 105, 180, 0.1);
+  --channel-limit-background-right: rgba(255, 105, 180, 0.2);
+
+  /*
+    Colores de la Barra de Desplazamiento
+  */
+  --scrollbar-color: #ff55a2;
+
+  /*
+    Divisor de Mensajes No Leídos
+  */
+  --unread-message-divider-color: #ff1493;
+  --unread-message-divider-font-color: #fff;
+
+  /*
+    Color de la Barra de Nuevos Mensajes
+  */
+  --new-messages-bar-background-color: #ff69b4;
+  --new-messages-bar-font-color: #fff;
+
+  /*
+    Menú de Emojis
+  */
+  --emoji-menu-background-color: rgba(20, 15, 25, 0.85);
+  --emoji-menu-sider-background-color: rgba(255, 105, 180, 0.1);
+  --emoji-menu-server-header-background-color: rgba(20, 15, 25, 0.9);
+  --emoji-menu-bottom-bar-background-color: rgba(10, 5, 15, 0.95);
+  --emoji-menu-search-bar-background-color: rgba(255, 105, 180, 0.15);
+
+  /*
+    Búsqueda de Mensajes
+  */
+  --message-search-menu-background-color: rgba(20, 15, 25, 0.9);
+  --message-search-container-background-color: rgba(20, 15, 25, 0.75);
+  --message-search-result-background-color: rgba(255, 105, 180, 0.1);
+
+  /*
+    Colores de Canales
+  */
+  --text-voice-channel-color: rgb(180, 150, 190);
+  --text-voice-channel-hover-color: #ffb3d9;
+  --text-voice-channel-selected-text-color: #fff;
+  --unread-text-channel-color: #fff;
+  --unread-text-channel-bubble-color: var(--main-theme-color);
+
+  /*
+    Carpetas
+  */
+  --folder-background-color: rgba(40, 30, 45, 0.8);
+  --expanded-folder-background-color: transparent;
+
+  /*
+    Reacciones
+  */
+  --reaction-emoji-background-color: rgba(255, 105, 180, 0.1);
+  --reaction-emoji-border-color: 1px solid rgba(255, 105, 180, 0.2);
+  --reaction-emoji-hover-background-color: rgba(255, 105, 180, 0.25);
+  --reaction-emoji-hover-border-color: rgba(255, 105, 180, 0.4);
+}
+
+/*
+  ESTILOS PERSONALIZADOS ADICIONALES PARA NINO
+*/
+
+/* Acento rosa en elementos seleccionados */
+.selected-2r1Hvo,
+.wrapper-1ZcZW- {
+  background-color: rgba(255, 105, 180, 0.15) !important;
+}
+
+/* Brillo sutil en hover */
+.containerDefault-YUSmu3:hover {
+  background-color: rgba(255, 105, 180, 0.08) !important;
+}
+
+/* Personalización del botón de usuario */
+.panels-3wFtMD {
+  background-color: rgba(20, 15, 25, 0.6) !important;
+}
+
+/* Borde decorativo rosa en el área de chat */
+.chatContent-3KubbW {
+  border-left: 2px solid rgba(255, 105, 180, 0.3);
+}
+
+/* Barras de desplazamiento (Scrollbars) más estéticas */
+::-webkit-scrollbar-thumb {
+  background-color: #ff55a2 !important;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Indicador de voz (cuando hablas) - Color rosa */
+.border-2Vy6FN.speaking-B2MXPi,
+.avatarSpeaking-33RRJU,
+.avatar-1EWyVD.speaking-7bHO7I,
+[class*="avatarSpeaking"],
+[class*="speaking"] {
+  box-shadow: inset 0 0 0 2px #ff55a2, inset 0 0 0 3px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Borde del avatar cuando hablas */
+.wrapper-1VLyxH.speaking-7bHO7I,
+[class*="wrapper"][class*="speaking"] {
+  box-shadow: 0 0 0 2px #ff55a2, 0 0 0 4px rgba(255, 85, 162, 0.3) !important;
+}
+
+/* Animación del anillo de voz */
+.voiceCallWrapper foreignObject > .svg-2azL_l circle {
+  stroke: #ff55a2 !important;
+}
+
+/* Panel de usuario en canal de voz */
+.panelIconWrapper-2m7h9i .avatarSpeaking-3pbvDX {
+  box-shadow: inset 0 0 0 2px #ff55a2 !important;
+}
